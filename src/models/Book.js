@@ -1,6 +1,5 @@
-const Sequelize = require('sequelize')
-
-const db = require('../config/db')
+import Sequelize from 'sequelize'
+import db from '../config/db'
 
 const Book = db.define('Book', {
   id: {

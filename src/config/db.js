@@ -1,6 +1,6 @@
-const { Sequelize } = require('sequelize')
+import Sequelize from 'sequelize'
 
-const config = require('../config')
+import config from './index'
 
 const setupSequelize = () => new Sequelize(config.databaseUrl, {
   logging: false,

@@ -1,33 +1,27 @@
-const { getFilesPaths } = require('./utils/files')
-const { getBookData } = require('./utils/books')
-const { saveBooksInDatabase } = require('./repositories/books')
-const PromisePool = require('@supercharge/promise-pool')
+import PromisePool from '@supercharge/promise-pool'
 
-const db = require('./config/db')
+import { getDataDirectoryPath, getFilesPaths } from './utils/files'
+import { getBookData } from './utils/books'
+import { saveBooksInDatabase } from './repositories/books'
 
-const filesPath = `${__dirname}/../data/**/*.rdf`
+export const main = async () => {
+  const dataDirectoryPath = getDataDirectoryPath()
+  const filesPaths = await getFilesPaths(dataDirectoryPath)
 
-const main = async () => {
-  try {
-    const filesPaths = await getFilesPaths(filesPath)
+  console.time('Books Processing')
 
-    console.time('Books Processing')
+  const { results: books } = await PromisePool
+    .for(filesPaths)
+    .withConcurrency(process.env.BATCH_SIZE || 50)
+    .process(async path => getBookData(path))
 
-    const { results: books } = await PromisePool
-      .for(filesPaths)
-      .withConcurrency(512)
-      .process(async path => getBookData(path))
+  console.timeEnd('Books Processing')
 
-    console.timeEnd('Books Processing')
+  console.time('Saving results in database')
 
-    console.time('Saving results in database')
+  await saveBooksInDatabase(books)
 
-    await saveBooksInDatabase(books)
-
-    console.timeEnd('Saving results in database')
-  } finally {
-    db.close()
-  }
+  console.timeEnd('Saving results in database')
 }
 
 (async () => main())()

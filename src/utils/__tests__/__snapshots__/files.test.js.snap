@@ -1,0 +1,1032 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Utils: files getBookDataFromFile should return promise with parsed data from file 1`] = `
+Object {
+  "rdf:RDF": Object {
+    "$": Object {
+      "xml:base": "http://www.gutenberg.org/",
+      "xmlns:cc": "http://web.resource.org/cc/",
+      "xmlns:dcam": "http://purl.org/dc/dcam/",
+      "xmlns:dcterms": "http://purl.org/dc/terms/",
+      "xmlns:pgterms": "http://www.gutenberg.org/2009/pgterms/",
+      "xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xmlns:rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    },
+    "cc:Work": Array [
+      Object {
+        "$": Object {
+          "rdf:about": "",
+        },
+        "cc:license": Array [
+          Object {
+            "$": Object {
+              "rdf:resource": "https://creativecommons.org/publicdomain/zero/1.0/",
+            },
+          },
+        ],
+        "rdfs:comment": Array [
+          "Archives containing the RDF files for *all* our books can be downloaded at
+            http://www.gutenberg.org/wiki/Gutenberg:Feeds#The_Complete_Project_Gutenberg_Catalog",
+        ],
+      },
+    ],
+    "pgterms:ebook": Array [
+      Object {
+        "$": Object {
+          "rdf:about": "ebooks/2",
+        },
+        "dcterms:creator": Array [
+          Object {
+            "pgterms:agent": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "2009/agents/1",
+                },
+                "pgterms:alias": Array [
+                  "U.S.A.",
+                ],
+                "pgterms:name": Array [
+                  "United States",
+                ],
+                "pgterms:webpage": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "https://en.wikipedia.org/wiki/United_States",
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        "dcterms:hasFormat": Array [
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/ebooks/2.rdf",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "13822",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N6bc4139785734830ab4086727367a970",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "application/rdf+xml",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-04T05:00:06.030706",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/files/2/2-h.zip",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "5270",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N42286d70390c48d7a4bdb30c9d861b74",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "text/html",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "Nc0ce0b283c5d4624a7a9c0eb51acfb82",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "application/zip",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2015-04-01T10:29:06",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/ebooks/2.epub.images",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "27632",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N95e362d336e34b8ca0a832bc1aff51c2",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "application/epub+zip",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-01T03:30:07.689179",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/ebooks/2.epub.noimages",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "27632",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "Nd918a5a88a184c62aa3350212db0e3cc",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "application/epub+zip",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-01T03:30:07.732183",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/cache/epub/2/pg2.cover.small.jpg",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "3015",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N4d421c2c9e604bf7b794dc593b94343f",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "image/jpeg",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-01T03:30:07.997177",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/files/2/2.zip",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "4990",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N1d994b5591a94aa09441df00f0d8c477",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "application/zip",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N5e514176f888407fa9e764747478a6d0",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "text/plain; charset=us-ascii",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2015-04-01T10:29:06",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/cache/epub/2/pg2.cover.medium.jpg",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "13723",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "Nbc2846238a294ccbb95510670de3fec6",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "image/jpeg",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-01T03:30:08.022171",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/ebooks/2.kindle.images",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "101188",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N343f641e1f214ae3a5ae339900a1efc3",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "application/x-mobipocket-ebook",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-01T03:30:07.853193",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/ebooks/2.txt.utf-8",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "11101",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "Nbea9023af36a471a8d59381df01a740f",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "text/plain",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-01T03:30:07.625239",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/ebooks/2.kindle.noimages",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "101172",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N81a19a363a4745d48fec062d953ba091",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "application/x-mobipocket-ebook",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2020-06-01T03:30:07.971196",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/files/2/2-h/2-h.htm",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "11678",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "N11f8bc73844d4f54a266cad6a78c7a0d",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "text/html",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2015-03-31T16:09:54",
+                  },
+                ],
+              },
+            ],
+          },
+          Object {
+            "pgterms:file": Array [
+              Object {
+                "$": Object {
+                  "rdf:about": "http://www.gutenberg.org/files/2/2.txt",
+                },
+                "dcterms:extent": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+                    },
+                    "_": "11100",
+                  },
+                ],
+                "dcterms:format": Array [
+                  Object {
+                    "rdf:Description": Array [
+                      Object {
+                        "$": Object {
+                          "rdf:nodeID": "Naa1f63ef8e0a42daa7a3a166f2460ea9",
+                        },
+                        "dcam:memberOf": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:resource": "http://purl.org/dc/terms/IMT",
+                            },
+                          },
+                        ],
+                        "rdf:value": Array [
+                          Object {
+                            "$": Object {
+                              "rdf:datatype": "http://purl.org/dc/terms/IMT",
+                            },
+                            "_": "text/plain; charset=us-ascii",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+                "dcterms:isFormatOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "ebooks/2",
+                    },
+                  },
+                ],
+                "dcterms:modified": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+                    },
+                    "_": "2015-04-01T10:28:32",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        "dcterms:issued": Array [
+          Object {
+            "$": Object {
+              "rdf:datatype": "http://www.w3.org/2001/XMLSchema#date",
+            },
+            "_": "1972-12-01",
+          },
+        ],
+        "dcterms:language": Array [
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "N1848365dc4014c1b94d217983b554e9f",
+                },
+                "rdf:value": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:datatype": "http://purl.org/dc/terms/RFC4646",
+                    },
+                    "_": "en",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+        "dcterms:license": Array [
+          Object {
+            "$": Object {
+              "rdf:resource": "license",
+            },
+          },
+        ],
+        "dcterms:publisher": Array [
+          "Project Gutenberg",
+        ],
+        "dcterms:rights": Array [
+          "Public domain in the USA.",
+        ],
+        "dcterms:subject": Array [
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "Nea3616a45b424f678c25fc81ae0fc233",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "http://purl.org/dc/terms/LCC",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "KF",
+                ],
+              },
+            ],
+          },
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "N891e41b4fa0648d19f757f96ded434c7",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "http://purl.org/dc/terms/LCC",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "JK",
+                ],
+              },
+            ],
+          },
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "N18db9b3b1b57496880c01ea8acecebbc",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "http://purl.org/dc/terms/LCSH",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "Civil rights -- United States -- Sources",
+                ],
+              },
+            ],
+          },
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "Nd971fb6df73a49f7b9ed021414b8065b",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "http://purl.org/dc/terms/LCSH",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "United States. Constitution. 1st-10th Amendments",
+                ],
+              },
+            ],
+          },
+        ],
+        "dcterms:title": Array [
+          "The United States Bill of Rights
+The Ten Original Amendments to the Constitution of the United States",
+        ],
+        "dcterms:type": Array [
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "Nbde30fcbe04d486b8ae137be1e191999",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "http://purl.org/dc/terms/DCMIType",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "Text",
+                ],
+              },
+            ],
+          },
+        ],
+        "pgterms:bookshelf": Array [
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "N50087239f5c442f2bf1aa4a8ad41945b",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "2009/pgterms/Bookshelf",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "United States Law",
+                ],
+              },
+            ],
+          },
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "N3a52bcfad72743eab3ace526cbfa4805",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "2009/pgterms/Bookshelf",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "Politics",
+                ],
+              },
+            ],
+          },
+          Object {
+            "rdf:Description": Array [
+              Object {
+                "$": Object {
+                  "rdf:nodeID": "N3c60f9f821ee4f51923108875d56eb6b",
+                },
+                "dcam:memberOf": Array [
+                  Object {
+                    "$": Object {
+                      "rdf:resource": "2009/pgterms/Bookshelf",
+                    },
+                  },
+                ],
+                "rdf:value": Array [
+                  "American Revolutionary War",
+                ],
+              },
+            ],
+          },
+        ],
+        "pgterms:downloads": Array [
+          Object {
+            "$": Object {
+              "rdf:datatype": "http://www.w3.org/2001/XMLSchema#integer",
+            },
+            "_": "171",
+          },
+        ],
+      },
+    ],
+    "rdf:Description": Array [
+      Object {
+        "$": Object {
+          "rdf:about": "https://en.wikipedia.org/wiki/United_States",
+        },
+        "dcterms:description": Array [
+          "en.wikipedia",
+        ],
+      },
+    ],
+  },
+}
+`;
