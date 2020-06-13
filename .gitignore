@@ -6,7 +6,6 @@ data
 
 node_modules
 dist
-coverage
 
 .idea
 .vscode
