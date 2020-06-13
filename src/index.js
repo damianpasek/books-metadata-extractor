@@ -1,25 +1,33 @@
 const { getFilesPaths } = require('./utils/files')
 const { getBookData } = require('./utils/books')
-
+const { saveBooksInDatabase } = require('./repositories/books')
 const PromisePool = require('@supercharge/promise-pool')
+
+const db = require('./config/db')
 
 const filesPath = `${__dirname}/../data/**/*.rdf`
 
 const main = async () => {
-  const filesPaths = await getFilesPaths(filesPath)
+  try {
+    const filesPaths = await getFilesPaths(filesPath)
 
-  console.time('Books Processing')
+    console.time('Books Processing')
 
-  const { results, errors } = await PromisePool
-    .for(filesPaths)
-    .withConcurrency(1024)
-    .process(async path => getBookData(path))
+    const { results: books } = await PromisePool
+      .for(filesPaths)
+      .withConcurrency(512)
+      .process(async path => getBookData(path))
 
-  console.log(results)
-  // console.log('errors', errors)
-  // console.log('number of errors', errors)
+    console.timeEnd('Books Processing')
 
-  console.timeEnd('Books Processing')
+    console.time('Saving results in database')
+
+    await saveBooksInDatabase(books)
+
+    console.timeEnd('Saving results in database')
+  } finally {
+    db.close()
+  }
 }
 
 (async () => main())()

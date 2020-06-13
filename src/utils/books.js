@@ -8,15 +8,23 @@ const safeGetProperty = (data, path = []) => {
   }
 }
 
+const getIdFromFilePath = path => {
+  try {
+    return parseInt(path.split('/').pop().split('.')[0].replace('pg', ''))
+  } catch {
+    return null
+  }
+}
+
 const getSubjects = book => {
   const subjects = book['dcterms:subject'] || []
 
   return subjects
-    .map(subject => safeGetProperty(subject, ['rdf:Description', 0, 'rdf:value']))
+    .map(subject => safeGetProperty(subject, ['rdf:Description', 0, 'rdf:value', 0]))
     .filter(Boolean)
 }
 
-const parseBookData = data => {
+const parseBookData = (id, data) => {
   const book = data['rdf:RDF']['pgterms:ebook'][0]
 
   const title = safeGetProperty(book, ['dcterms:title', 0])
@@ -27,12 +35,14 @@ const parseBookData = data => {
   const publicationDate = safeGetProperty(book, ['dcterms:issued', 0, '_'])
   const subjects = getSubjects(book)
 
-  return { title, author, publisher, publication_date: publicationDate, language, subjects, license }
+  return { external_id: id, title, author, publisher, publication_date: publicationDate, language, subjects, license }
 }
 
 const getBookData = async (filePath) => {
+  const id = getIdFromFilePath(filePath)
   const fileContent = await getBookDataFromFile(filePath)
-  return parseBookData(fileContent)
+
+  return parseBookData(id, fileContent)
 }
 
 module.exports = {

@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src --ext ts,js"
+    "lint": "eslint src --ext ts,js",
+    "migrate": "sequelize db:migrate",
+    "migrate:undo": "sequelize db:migrate:undo",
+    "migrate:create": "sequelize migration:generate",
+    "start": "node src/index"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +16,9 @@
   "dependencies": {
     "@supercharge/promise-pool": "^1.2.0",
     "glob": "^7.1.6",
+    "lodash": "^4.17.15",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.12",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
@@ -20,6 +27,7 @@
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-plugin-standard": "^4.0.1",
+    "sequelize-cli": "^5.5.1"
   }
 }
