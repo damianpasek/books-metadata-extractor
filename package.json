@@ -17,7 +17,7 @@
   "dependencies": {
     "@supercharge/promise-pool": "^1.2.0",
     "glob": "^7.1.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.12",
     "xml2js": "^0.4.23"
